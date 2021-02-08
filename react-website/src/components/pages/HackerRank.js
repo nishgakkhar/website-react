@@ -3,7 +3,7 @@ import '../../App.css';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
-export default function Projects() {
+export default function FoodLabel() {
   return  (
     <AwesomeSlider>
       <div data-src="././images/lb-1.png" />

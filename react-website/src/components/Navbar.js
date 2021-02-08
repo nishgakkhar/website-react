@@ -56,11 +56,11 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Hire Me
+                Contact Me
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Hire Me</Button>}
+          {button && <Button buttonStyle='btn--outline'>Contact Me</Button>}
         </div>
       </nav>
     </>
