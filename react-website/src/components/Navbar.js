@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
@@ -28,12 +29,8 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <i class="fa fa-line-chart" aria-hidden="true"></i>
-            <i class='fab fa-typo3' />
-          </Link>
           <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            <i className={click ? 'fa fa-times' : 'fa fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
@@ -47,20 +44,29 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Project
+                Work
               </Link>
             </li>
-            <li>
+            <li className='nav-item'>
               <Link
-                to='/hire-me'
+                to='/aboutMe'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                About Me
+              </Link>
+            </li>
+            {/* <li>
+              <Link
+                to='/connect'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Contact Me
+                Contact
               </Link>
-            </li>
+            </li> */}
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Contact Me</Button>}
+          {button && <Button buttonStyle='btn--outline' onClick={event =>  window.location.href='https://www.linkedin.com/in/nishtha-gakkhar-532784111/'}>Connect</Button>}
         </div>
       </nav>
     </>

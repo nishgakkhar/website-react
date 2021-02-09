@@ -1,16 +1,15 @@
 import React from 'react';
 import '../../App.css';
-import AwesomeSlider from 'react-awesome-slider';
+import { Link } from 'react-router-dom';
 import 'react-awesome-slider/dist/styles.css';
 
 export default function FoodLabel() {
   return  (
-    <AwesomeSlider>
-      <div data-src="././images/lb-1.png" />
-      <div data-src="././images/lb-2.png" />
-      <div data-src="././images/lb-3.png" />
-      <div data-src="././images/lb-4.png" />
-      <div data-src="././images/lb-5.png" />
-    </AwesomeSlider>
+    <div className="verdantU">
+    <Link to="/app-release.apk" target="_blank" download>
+      <i class="fa fa-android"></i>
+      <h1>Download Android App</h1>
+    </Link>
+    </div>
   );
 }

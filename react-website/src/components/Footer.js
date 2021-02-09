@@ -1,39 +1,33 @@
 import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <div className='footer-container'>
-      <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
-              Nish Gakkhar
-              <i class='fa fa-typo3' />
-            </Link>
+            <small class='website-rights'>
+              <span>© 2021 by Nishtha Gakkhar  </span>
+              <span><i class="fa fa-heart"></i></span>
+            </small>
           </div>
-          <small class='website-rights'>website © 2020</small>
           <div class='social-icons'>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fa fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link LinkedIn'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fa fa-linkedin' />
-            </Link>
+            <a class='social-icon-link LinkedIn' href="https://www.linkedin.com/in/nishtha-gakkhar-532784111/">
+                 <i class='fa fa-linkedin' />
+            </a>
+            <a class='social-icon-link LinkedIn' href="https://github.com/nishgakkhar">
+              <i class='fa fa-github' />
+            </a>
+            <a class='social-icon-link LinkedIn' href={`mailto:nishgakkhar@gmail.com`}>
+                 <i class='fa fa-envelope' />
+            </a>
+          </div>
+            <div>
+            <a class='website-rights' href={`mailto:nishgakkhar@gmail.com`}>
+                  <small class="website-rights">nishgakkhar@gmail.com</small>
+            </a>
           </div>
         </div>
-      </section>
     </div>
   );
 }
