@@ -18,9 +18,11 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import Footer from '../Footer';
 
 function Cards() {
   return (
+    <div>
     <div className='cards'>
       <h1>Work journey</h1>
       <div className='cards__container'>
@@ -41,12 +43,6 @@ function Cards() {
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='./images/hackerRank.jpeg'
-              text='Analysed the trend in hacker rank competitions'
-              label='HackerRank analysis'
-              path='/hackerRank'
-            />
-            <CardItem
               src='./images/verdantU.jpeg'
               text='An app to record carbon emission from food items. It helps an individual to monitor their share in carbon emission'
               label='Verdant U'
@@ -55,6 +51,8 @@ function Cards() {
           </ul>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 }
